@@ -1,5 +1,5 @@
 # MK_Shop เพิ่มประเภทสินค้าแล้ว
-Created by Nongyao Sornjapo
+Created by
 
 
 ## Project setup
