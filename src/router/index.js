@@ -14,6 +14,13 @@ const routes = [
     meta: { requiresAuth: true },
   },
   
+
+  {
+    path: "/categorys_edit",
+    name: "categorys_edit",
+    component: () => import("../views/categorys_edit.vue"),
+    meta: { requiresAuth: true },
+  },
    
   {
     path: "/orders",
