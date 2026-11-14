@@ -145,7 +145,7 @@ export default {
     // ✅ ดึงข้อมูลสินค้า + ประเภทสินค้า
     const fetchProducts = async () => {
       try {
-        const res = await fetch("http://localhost/MK_SHOP/php_api/api_categorys.php");
+        const res = await fetch("http://localhost/mkshop_68701390/php_api/api_categorys.php");
         const data = await res.json();
         if (data.success) {
           categorys.value = data.data;
@@ -203,7 +203,7 @@ export default {
       if (newImageFile.value) formData.append("image", newImageFile.value);
 
       try {
-        const res = await fetch("http://localhost/MK_SHOP/php_api/api_categorys.php", { method: "POST", body: formData });
+        const res = await fetch("http://localhost/mkshop_68701390/php_api/api_categorys.php", { method: "POST", body: formData });
         const result = await res.json();
         alert(result.message || result.error);
 
@@ -227,7 +227,7 @@ export default {
       const formData = new FormData();
       formData.append("action", "delete");
       formData.append("category_id", id);
-      const res = await fetch("http://localhost/MK_SHOP/php_api/api_categorys.php", { method: "POST", body: formData });
+      const res = await fetch("http://localhost/mkshop_68701390/php_api/api_categorys.php", { method: "POST", body: formData });
       const result = await res.json();
       alert(result.message || result.error);
       fetchProducts();
